@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif; /* Remover aspas ao redor de "Roboto" */
+  font-family: Roboto, sans-serif;
 }
 
 header {
@@ -15,11 +15,11 @@ header {
   align-items: center;
   width: 100%;
   padding: 10px 20px;
-  background-color: #fff; /* Ajustar conforme o design */
+  background-color: #fff;
 }
 
 .logo img {
-  height: 50px; /* Ajustar conforme o design */
+  height: 50px;
 }
 
 nav ul {
@@ -41,7 +41,7 @@ nav ul li:last-child {
 
 nav a {
   text-decoration: none;
-  color: #000; /* Ajustar conforme o design */
+  color: #000;
   text-transform: uppercase;
   position: relative;
 }
@@ -53,14 +53,13 @@ nav a.is-active::after {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background-color: var(--blue-color, #00f); /* Usar forma reduzida do código hexadecimal */
+  background-color: var(--blue-color, #00f);
 }
 
 nav a:hover {
-  color: #00f; /* Usar forma reduzida do código hexadecimal */
+  color: #00f;
 }
 
-/* Adicionar margens para espaçamento, em vez de gap */
 nav a:not(:first-child) {
-  margin-left: 20px; /* Ajustar conforme o design */
+  margin-left: 20px;
 }
