@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif; /* Remover aspas ao redor de "Roboto" */
 }
 
 header {
@@ -53,11 +53,11 @@ nav a.is-active::after {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background-color: var(--blue-color, #0000ff); /* Usar variável CSS para a cor azul */
+  background-color: var(--blue-color, #00f); /* Usar forma reduzida do código hexadecimal */
 }
 
 nav a:hover {
-  color: #0000ff; /* Ajustar conforme o design */
+  color: #00f; /* Usar forma reduzida do código hexadecimal */
 }
 
 /* Adicionar margens para espaçamento, em vez de gap */
