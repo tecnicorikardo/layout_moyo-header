@@ -1,3 +1,66 @@
-body {
+/* Reset CSS */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff; /* Ajustar conforme o design */
+}
+
+.logo img {
+  height: 50px; /* Ajustar conforme o design */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; /* Ajustar conforme o design */
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav a.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-color, #0000ff); /* Usar variável CSS para a cor azul */
+}
+
+nav a:hover {
+  color: #0000ff; /* Ajustar conforme o design */
+}
+
+/* Adicionar margens para espaçamento, em vez de gap */
+nav a:not(:first-child) {
+  margin-left: 20px; /* Ajustar conforme o design */
 }
